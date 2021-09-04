@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orçamento pessoal</title>
+    <link rel="stylesheet" href="oracamento_estilo.css">
+    <link rel="stylesheet" href="navbar.css">
+    
+</head>
+<body>
+    <header>
+        <div id="logo"><img src="./imagens/porco.png" alt=""></div>
+        <div class="hamb" id="hamb">
+            <div class="hambF"></div>
+            <div class="hambF"></div>
+            <div class="hambF"></div>
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a href="orcamento.html">Cadastro de despesa</a></li>
+                <li><a href="despesa_view/despesas_view.html">Consulta</a></li>
+                <li><a href="configuracao/configuracao.html">Configurações</a></li>
+            </ul>
+            
+        </div>
+    </header>
+
+    <main>
+        <div id="form">
+            <form action="#">
+                <h1>Cadastro de despesas</h1> <br>
+                <label for="descricao" >Descrição</label><br>
+                <input type="text" id="descricao" class="descricao"><br>
+                <label for="categoria" >Categoria</label><br>
+
+                <select id="categoria" class="tipo" id='tipo'>
+                    <option value="" selected>Categoria</option>
+                    <option value="fixa" >Despesa fixa</option>
+                    <option value="roupa">Roupa</option>
+                    <option value="lanche">Lanche</option>
+                    <option value="Laser">Transporte</option>
+                </select>
+                <br>
+                <label for="data">Data</label> <br>
+                <input type="date" id="data" class="data"><br>
+                <label for="valor">Valor gasto(R$)</label> <br>
+                <input type="number" id="valor" class="valor">
+                <br>
+                <input type="button" id="cadastrar" value="cadastrar">
+            </form>
+        </div>
+    </main>
+    <script src="orcamento_action.js"></script>
+    <script src="navbar.js"></script>
+</body>
+</html>

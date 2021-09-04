@@ -1,0 +1,66 @@
+main{
+    min-height: 700px;
+
+}
+button{
+    background-color: rgb(255, 0, 0);
+    color: white;
+    font-size: 1.3rem;
+    padding: 2px;
+    border-radius: 100px;
+}
+
+#painel{
+    display: flex;
+    justify-content:space-around;
+}
+#painel div{
+    margin-top: 5%;
+    padding: 20px;
+    width: 40%;
+    font-family: monospace;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 1000;
+}
+#salario{
+    background: green;
+    border-radius: 20px;
+    border: 2px solid black;
+    text-align: center;
+}
+#soma{
+    color: rgb(0, 0, 0) !important;
+    background: rgb(248, 202, 202);
+    border-radius: 20px;
+    border: 2px solid black;
+    text-align: center;
+}
+table{
+    margin: auto;
+    border:3px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    width: 70%;
+    margin-top: 10%;
+    font-family: monospace;
+    font-size: 1.1rem;
+    color: white;
+    font-weight: 800;
+    text-align: center;
+    background: white;
+}
+
+th{
+    padding: 10px;
+    width:900px;
+    color: black;
+    border:none;
+}
+td{
+    padding: 10px 8px;
+    font-size: 0.9rem;
+    color:rgb(76, 0, 255);
+    border-top:2px solid black;
+}
+
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de despesas</title>
+    <link rel="stylesheet" href="../navbar.css">
+    <link rel="stylesheet" href="conf.css">
+</head>
+<body>
+    <header>
+        <div id="logo"><img src="../imagens/porco.png" alt=""></div>
+        <div class="hamb" id="hamb">
+            <div class="hambF"></div>
+            <div class="hambF"></div>
+            <div class="hambF"></div>
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a href="../orcamento.html">Cadastro de despesa</a></li>
+                <li><a href="../despesa_view/despesas_view.html">Consulta</a></li>
+                <li><a href="configuracao.html">Configurações</a></li>
+            </ul>
+            
+        </div>
+    </header>
+<body>
+    <main>
+        
+            <label for="salario">Salário</label>
+            <input id='salario' type="text">
+            <input type="button" value="Salvar" onclick="salvarConf()">
+
+    </main>
+</body>
+<script src="../navbar.js"></script>
+<script>
+    function salvarConf(){
+        let salario = document.getElementById('salario').value
+        localStorage.setItem('salario',salario)
+    }
+</script>
+
+</html>

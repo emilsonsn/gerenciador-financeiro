@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    height: 97vh;
+    background: rgb(0, 132, 255);
+    overflow-x:hidden;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 10%;
+    background-color: rgb(255, 255, 255);
+    border-bottom:3px solid black;
+    position: relative;
+    min-height: 100px;
+    min-width: 300px;
+}
+header .hamb{
+    display: none;
+}
+#logo img{
+    background-size:auto;
+    height:80%;
+    margin: 10px 10px 10px 60px;   
+}
+header ul li{
+    display: inline;
+
+}
+header ul{
+    position: absolute;
+    top: 40%;
+    right: 5%;
+}
+
+header ul li a{
+    font-family:monospace ;
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    font-size:1.5rem;
+    color: rgb(0, 0, 0);
+}
+header ul li a:hover{
+    border-bottom: 1px solid black;
+}
+
+
+@media(max-width:900px){
+    #logo img{
+        background-size:auto;
+        margin-left: 10px;
+    }
+
+    header #menu ul{
+    overflow-x: hidden;
+    display: flex;
+    border: 1px solid rgb(4, 0, 255);
+    flex-direction: column;
+    position: absolute;
+    left: 0px;
+    top: 100%;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 1);
+    height: 100vh;
+    transform: translateX(-105%);
+    width:100%;
+     
+     transition: ease-out 0.5s;
+    }
+    header #menu ul li{
+        margin-top: 15px;
+        border-bottom: 1px solid rgb(4, 0, 255);
+    }
+    header #menu ul a{
+        color: rgb(6, 4, 161);
+        font-size: 1.4rem;
+        font-weight: 800; 
+    }
+    header #menu ul a:hover{
+        border-bottom: 0;
+    }
+   
+    header .hamb{
+        display: block;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 10px;
+        position: absolute;
+        right: 15px;
+        top: 25%;
+    }
+    header .hamb .hambF{
+        height: 5px;
+        width: 40px;
+        background-color: rgb(0, 132, 255);
+        margin: 10px;
+
+    }
+    .ativado ~ #menu ul{
+        display: flex;
+        transform: translateX(0);
+        transition: ease 0.5s;
+    }
+}

@@ -1,0 +1,91 @@
+main{
+    min-height: 700px;
+}
+
+#form{
+    display: flex;
+    justify-content: center;
+    height: 75vh;
+    align-items: center;
+    min-height: 510px;
+}
+form{
+    margin-top: 30px;
+    border:5px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    width: 40%;
+    height: 100%;
+    position: relative;
+}
+form label{
+    font-size: 1.3rem;
+    font-family: monospace;
+    text-transform: uppercase;
+    margin: 8px;
+    color: rgb(98, 0, 255);
+}
+form input{
+    width: 100%;
+    margin: 15px 5px;
+    height: 7%;
+    padding: 1%;
+    color: black;
+    font-size: 1rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px;
+    border:1px solid black ;
+    outline: none;
+}
+form input:focus, select:focus{
+    border: 2px solid rgb(98, 0, 255);
+}
+
+select{
+    width: 100%;
+    margin: 8px;
+    height: 7%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px;
+    border:1px solid black ;
+    font-size: 1.3rem;
+    font-family: monospace;
+    color: rgb(46, 46, 46);
+
+}
+input[type='button']{
+    height: 10%;
+    border-radius: 15px;
+    border:none;
+    background-image: linear-gradient(to right,rgb(76, 0, 255),rgb(76, 0, 255));
+    font-size: 2rem;
+    text-align: center;
+    line-height: 0%;
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+}
+input[type='button']:hover{
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(to right,rgb(151, 25, 151),rgb(153, 0, 255));
+    
+}
+form h1{
+    font-family: 3rem;
+    color: rgb(98, 0, 255);
+    text-align: center;
+}
+
+
+@media(max-width:900px){
+    form label{
+        font-size: 1rem;
+        font-family: monospace;
+        text-transform: uppercase;
+    }
+    form{
+        width: 90%;
+        padding: 10px;
+    }
+}
+
