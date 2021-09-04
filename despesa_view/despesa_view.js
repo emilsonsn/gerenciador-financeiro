@@ -10,6 +10,12 @@ function deletar(id){
     localStorage.removeItem(id)
     mostrarDespesas()
 }
+
+function tratarData(data){
+    let dataTratada = data.split('-')
+    return (`${dataTratada[2]}/${dataTratada[1]}`)
+}
+
 function mostrarDespesas(){
     const tbody = document.getElementById('tbody')
     let soma =document.getElementById('soma') 
@@ -27,14 +33,13 @@ function mostrarDespesas(){
         botao.innerHTML = 'X'
         botao.setAttribute('onclick',"deletar("+JSON.parse(despesa[i]).id+")")
         linha.insertCell().innerHTML = JSON.parse(despesa[i]).descricao
-        linha.insertCell().innerHTML = JSON.parse(despesa[i]).data
+        linha.insertCell().innerHTML = tratarData(JSON.parse(despesa[i]).data)
         linha.insertCell().innerHTML = JSON.parse(despesa[i]).tipo
         linha.insertCell().innerHTML = JSON.parse(despesa[i]).valor
         let linha2 = linha.insertCell()
         linha2.appendChild(botao)
         valor += parseInt(JSON.parse(despesa[i]).valor)
         console.log(JSON.parse(despesa[i]))
-
 
     }
     soma.innerHTML = 'R$'+valor
