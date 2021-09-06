@@ -27,10 +27,23 @@
     </header>
 
     <main>
+        
         <div id="painel">
             <div id="salario"></div>
             <div id="soma"></div>
         </div>
+        <div id="filtros">
+            <input type="date" id="data">
+            <input type="text" id="descricao" placeholder="Descrição"> 
+            <select name="categoria" id="categoria">
+                <option value="" selected>Categoria</option>
+                    <option value="fixa" >Despesa fixa</option>
+                    <option value="roupa">Roupa</option>
+                    <option value="lanche">Lanche</option>
+                    <option value="Laser">Transporte</option>
+            </select>
+        </div>
+        <input type="button" value="fitrar" onclick="mostrarDespesas()">
         <table cellspacing="0">
             <thead>
                 <tr>

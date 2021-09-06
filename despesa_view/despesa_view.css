@@ -19,7 +19,7 @@ button{
 #painel div{
     margin-top: 5%;
     padding: 20px;
-    width: 40%;
+    width: 50%;
     font-family: monospace;
     font-size: 1.5rem;
     color: white;
@@ -39,13 +39,37 @@ button{
     text-align: center;
 }
 
+#filtros{
+    display: flex;
+    margin: 3% auto;
+    width: 75%;
+    
+    justify-content: center;
+}
+
+input, select{
+    width: 30%;
+    margin: 5px;   
+    border-radius: 10px;
+    padding: 10px;
+}
+input[type="button"]{
+    width: 70%;
+    border-radius:20px ;
+    border: none;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-family: monospace;
+    display: block;
+    margin: auto;
+}
 
 table{
     margin: auto;
     border:3px solid rgb(0, 0, 0);
     border-radius: 10px;
     width: 70%;
-    margin-top: 10%;
+    margin-top: 2%;
     font-family: monospace;
     font-size: 1.1rem;
     color: white;
@@ -69,6 +93,16 @@ td{
 
 @media(max-width:450px){
     #painel{
-        width: 100%;
+        width: 90%;
+    }
+    #filtros{
+        width: 90%;
+    }
+    input[type="button"]{
+        width: 90%;
+    }
+    input[type="date"]{
+        font-size: 0.7rem;
+        width: 40%;
     }
 }

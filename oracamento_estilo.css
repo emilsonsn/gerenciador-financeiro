@@ -20,11 +20,12 @@ form{
     position: relative;
 }
 form label{
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-family: monospace;
+    font-weight: 600;
     text-transform: uppercase;
     margin: 8px;
-    color: rgb(98, 0, 255);
+    color: rgb(0, 0, 0);
 }
 form input{
     width: 100%;
