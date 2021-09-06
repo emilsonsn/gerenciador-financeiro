@@ -29,6 +29,26 @@ class BD {
             id: 5
         }
     } 
+    mostrarSucesso(){
+        let body = document.getElementById('body')
+        let sucesso = document.createElement('div')
+        body.appendChild(sucesso)
+        sucesso.setAttribute('class','sucesso')
+        sucesso.innerHTML = 'Despesa salva com sucesso!'
+        setTimeout(() => {
+            sucesso.style.left = '15%'
+        }, 100);
+        setTimeout(() => {
+            sucesso.remove()
+        }, 1300);
+    }
+    resetarCampos(){
+        document.getElementById('descricao').value = '';
+        select.value = '';
+        document.getElementById('data').value= '';
+        document.getElementById('valor').value= '';
+    }
+
     gravar(){
         if(!this.validarDados()){
             alert('Despesa inválida! Preencha todos os campos.')
@@ -40,6 +60,8 @@ class BD {
         console.log(despesa)
         localStorage.setItem(indice,JSON.stringify(despesa))
         localStorage.setItem('id',indice)
+        this.resetarCampos()
+        this.mostrarSucesso()
     }
 }
 

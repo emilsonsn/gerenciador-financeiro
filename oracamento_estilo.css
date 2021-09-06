@@ -77,6 +77,21 @@ form h1{
     text-align: center;
 }
 
+.sucesso{
+    text-align: center;
+    color: white;
+    border: 3px solid black;
+    border-radius: 30px;
+    padding: 10px;
+    font-family: cursive;
+    font-size: 2rem;
+    position:absolute;
+    width: 75%;
+    top: 30%;
+    left: -100%;
+    background-color: green;
+    transition: all 0.5s;
+}
 
 @media(max-width:900px){
     form label{
