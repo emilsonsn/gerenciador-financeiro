@@ -94,13 +94,15 @@ form h1{
 }
 
 @media(max-width:900px){
+
     form label{
         font-size: 1rem;
         font-family: monospace;
         text-transform: uppercase;
     }
     form{
-        width: 90%;
+        display: block;
+        width:90%;
         padding: 10px;
     }
 }

@@ -23,7 +23,7 @@ class BD {
     lerValoresDoFormulario(){
         return{
             descricao:document.getElementById('descricao').value,
-            tipo : select.options[select.selectedIndex].value,
+            categoria : select.options[select.selectedIndex].value,
             data:document.getElementById('data').value,
             valor:document.getElementById('valor').value,
             id: 5
