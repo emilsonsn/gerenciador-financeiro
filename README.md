@@ -1,14 +1,6 @@
 <html>
 <head>
-<style>
-    h1{
-    text-align: center;
-    }
-    img{
-        margin: 0 auto;
-        display :block;
-    }
-</style>
+
 </head>
 
 <body>
@@ -19,7 +11,7 @@
      onde os disponíveis no mercado não atendiam às minhas ideias.
 </p> 
 
-<img src="https://user-images.githubusercontent.com/53051138/132096028-e594588e-7649-48e2-8ffb-546fc952090f.png">
+<img src="https://user-images.githubusercontent.com/53051138/132096028-e594588e-7649-48e2-8ffb-546fc952090f.png" style='margin:0 auto; display:block;'>
 </body>
 </html>
 
