@@ -18,7 +18,6 @@ function filtrar(despesas){
     if(mes.value == '' && categoria.value == '' && descricao.value == ''){
         return despesas
     }
-
     despesas = despesas.filter((d) => {
         if(d == null){
             return false
@@ -43,7 +42,6 @@ function filtrar(despesas){
      }
     return despesas
 }
-
 function pegarMes(data){
     let dataTratada = data.split('-')
     console.log(dataTratada)
@@ -53,7 +51,6 @@ function tratarData(data){
     let dataTratada = data.split('-')
     return (`${dataTratada[2]}/${dataTratada[1]}`)
 }
-
 function mostrarDespesas(){
     const tbody = document.getElementById('tbody')
     let soma =document.getElementById('soma') 
@@ -91,5 +88,4 @@ function mostrarDespesas(){
         salario.style.background = 'green'
     }
 }
-
 mostrarDespesas()
