@@ -11,11 +11,11 @@ function deletar(id){
     mostrarDespesas()
 }
 function filtrar(despesas){
-    let data = document.getElementById('data')
+    let mes = document.getElementById('mes')
     let categoria = document.getElementById('categoria')
     let descricao = document.getElementById('descricao')
 
-    if(data.value == '' && categoria.value == '' && descricao.value == ''){
+    if(mes.value == '' && categoria.value == '' && descricao.value == ''){
         return despesas
     }
 
@@ -25,10 +25,10 @@ function filtrar(despesas){
         }
             return true 
     });
-    if(data.value != ''){
+    if(mes.value != ''){
       despesas = despesas.filter(d => {
               console.log('verdadeiro')
-              return JSON.parse(d).data == data.value
+              return pegarMes(JSON.parse(d).data) == mes.value
       })
     }
     if(categoria.value != ''){
@@ -44,7 +44,11 @@ function filtrar(despesas){
     return despesas
 }
 
-
+function pegarMes(data){
+    let dataTratada = data.split('-')
+    console.log(dataTratada)
+    return dataTratada[1]
+}
 function tratarData(data){
     let dataTratada = data.split('-')
     return (`${dataTratada[2]}/${dataTratada[1]}`)

@@ -9,7 +9,6 @@ button{
     padding: 2px;
     border-radius: 100px;
 }
-
 #painel{
     display: flex;
     justify-content:space-around;
@@ -19,7 +18,7 @@ button{
 #painel div{
     margin-top: 5%;
     padding: 20px;
-    width: 50%;
+    width: 48%;
     font-family: monospace;
     font-size: 1.5rem;
     color: white;
@@ -38,17 +37,14 @@ button{
     border: 2px solid black;
     text-align: center;
 }
-
 #filtros{
     display: flex;
     margin: 3% auto;
-    width: 75%;
-    
+    width: 75%;   
     justify-content: center;
 }
-
 input, select{
-    width: 30%;
+    width: 36%;
     margin: 5px;   
     border-radius: 10px;
     padding: 10px;
@@ -60,10 +56,17 @@ input[type="button"]{
     font-size: 1.5rem;
     text-transform: uppercase;
     font-family: monospace;
+    border: 3px solid rgb(0, 0, 0);
+    font-weight: 700;
     display: block;
     margin: auto;
 }
-
+input[type='button']:hover{
+    background: green;
+    color: white;
+    font-weight: 700;
+    border: 3px solid rgb(0, 0, 0);
+}
 table{
     margin: auto;
     border:3px solid rgb(0, 0, 0);
@@ -77,7 +80,6 @@ table{
     text-align: center;
     background: white;
 }
-
 th{
     padding: 10px;
     width:900px;
@@ -115,5 +117,4 @@ td{
         width: 20% !important;
         word-break: break-word;
     }
-    
 }
