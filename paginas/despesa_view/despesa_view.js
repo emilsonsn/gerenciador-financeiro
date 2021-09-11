@@ -84,9 +84,11 @@ function mostrarDespesas(){
            }
         } 
     soma.innerHTML = 'R$'+valor
-    salario.innerHTML = 'R$'+(parseInt(localStorage.getItem('salario'))- valor)
-    if((parseInt(localStorage.getItem('salario'))- valor) <0){
+    salario.innerHTML = !isNaN(parseFloat(localStorage.getItem('salario'))) ? 'R$'+(parseFloat(localStorage.getItem('salario'))- valor) : 'R$0,00'
+    if((parseFloat(localStorage.getItem('salario'))- valor) <0){
         salario.style.background = 'red'
+    }else{
+        salario.style.background = 'green'
     }
 }
 
