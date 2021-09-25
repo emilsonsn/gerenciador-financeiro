@@ -9,6 +9,7 @@
      conseguir vizualizar as despesas cadastradas, podendo aplicar diferentes tipos de filtros e com uma painel com uma marcador  indicando a soma total do valor de todas as despesas e uma marcador que mostrasse "o quanto ainda se pode gastar" (salario-somadDasDespesas). Salário esse que pode ser inidicado na tela de configurações.</p>
 
 <h1>Página de cadastro de despesa</h1>
+
 ![casdastro](https://user-images.githubusercontent.com/53051138/134775510-6b40c390-05ef-4ad8-a3a7-c3a46cd8b918.gif)
 
 
