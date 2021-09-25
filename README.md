@@ -14,9 +14,11 @@
 
 
 <h1>Página de vizualização das despesa</h1>
+
 ![ver](https://user-images.githubusercontent.com/53051138/134775605-f49024ae-587d-4e0e-9e74-3e879cdbf95e.gif)
 
 <h1>Página de Configuração</h1>
+
 ![configuracao](https://user-images.githubusercontent.com/53051138/134775754-fe13dbfd-7189-4555-ac7c-6f05554f5ebe.gif)
 
 
